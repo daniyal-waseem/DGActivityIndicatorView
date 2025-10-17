@@ -14,8 +14,14 @@ let package = Package(
         .target(
             name: "DGActivityIndicatorView",
             path: "DGActivityIndicatorView",
-            publicHeadersPath: "."
+            publicHeadersPath: ".",
+            cSettings: [
+                .headerSearchPath(".")
+            ]
         )
     ],
-    swiftLanguageVersions: [.v5]
+    swiftLanguageVersions: [.v5],
+    metadata: PackageMetadata(
+        description: "A beautiful activity indicator view for iOS written in Objective-C."
+    )
 )
