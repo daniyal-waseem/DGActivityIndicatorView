@@ -13,7 +13,8 @@ let package = Package(
     targets: [
         .target(
             name: "DGActivityIndicatorView",
-            path: "DGActivityIndicatorView"
+            path: "DGActivityIndicatorView",
+            publicHeadersPath: "."
         )
     ],
     swiftLanguageVersions: [.v5]
