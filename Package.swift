@@ -3,23 +3,17 @@ import PackageDescription
 
 let package = Package(
     name: "DGActivityIndicatorView",
-    platforms: [
-        .iOS(.v11)
-    ],
+    platforms: [.iOS(.v11)],
     products: [
         .library(
             name: "DGActivityIndicatorView",
             targets: ["DGActivityIndicatorView"]
-        )
+        ),
     ],
     targets: [
         .target(
             name: "DGActivityIndicatorView",
-            path: "DGActivityIndicatorView",
-            publicHeadersPath: ".",
-            cSettings: [
-                .headerSearchPath(".")
-            ]
+            path: "DGActivityIndicatorView"
         )
     ],
     swiftLanguageVersions: [.v5]
